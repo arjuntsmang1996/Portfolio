@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arjun Tamang - Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+  transition:0.3s;
+}
+
+body{
+  color:#fff;
+  background:url("https://images.unsplash.com/photo-1501785888041-af3ef285b470") no-repeat center center fixed;
+  background-size:cover;
+}
+
+body::before{
+  content:"";
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:rgba(0,40,20,0.65);
+  backdrop-filter:blur(6px);
+  z-index:-1;
+}
+
+/* HEADER */
+header{
+  text-align:center;
+  padding:45px 20px;
+  background:rgba(0,0,0,0.45);
+}
+
+.profile{
+  width:165px;
+  height:165px;
+  border-radius:50%;
+  border:3px solid #00ffd5;
+  object-fit:cover;
+  box-shadow:0 0 15px rgba(0,255,213,0.4);
+}
+
+h1{
+  color:#00ffd5;
+  margin-top:12px;
+  letter-spacing:1px;
+}
+
+.line{
+  margin:8px 0;
+  line-height:1.8;
+  color:#e8f5f0;
+}
+
+.highlight{
+  color:#00ffd5;
+  font-weight:bold;
+}
+
+/* SECTIONS */
+section{
+  max-width:900px;
+  margin:auto;
+  padding:30px 22px;
+}
+
+.title{
+  color:#00ffd5;
+  margin-bottom:18px;
+  border-left:4px solid #00ffd5;
+  padding-left:10px;
+}
+
+/* EXPERIENCE */
+.step{
+  margin-bottom:18px;
+  padding:12px;
+  border-left:2px solid #00ffd5;
+  background:rgba(0,0,0,0.25);
+  border-radius:6px;
+}
+
+.step-title{
+  color:#00ffd5;
+  font-weight:bold;
+  margin-bottom:5px;
+}
+
+/* SKILLS */
+.skill{
+  margin:14px 0;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-size:15px;
+}
+
+.skill i{
+  color:#00ffd5;
+  width:20px;
+}
+
+/* BAR */
+.bar{
+  background:#222;
+  height:10px;
+  width:100%;
+  border-radius:20px;
+  overflow:hidden;
+}
+
+.progress{
+  height:10px;
+  background:#00ffd5;
+}
+
+.html{width:90%;}
+.css{width:70%;}
+.js{width:50%;}
+.python{width:30%;}
+
+/* BUTTONS */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  margin:8px;
+  padding:10px 18px;
+  border-radius:25px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.download{background:#00ffd5;color:#000;}
+.whatsapp{background:#25D366;color:#fff;}
+.gmail{background:#ea4335;color:#fff;}
+
+.btn:hover{
+  transform:scale(1.05);
+}
+
+/* CONTACT */
+.contact{
+  text-align:center;
+  margin-top:25px;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:22px;
+  background:rgba(0,0,0,0.4);
+  margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<img class="profile" src="IMG_20260502_215804.png">
+<h1>Arjun Tamang</h1>
+<p id="typing" class="line"></p>
+
+<a class="btn download" href="Arjun_Tamang_CV.pdf" download>
+⬇ Download CV
+</a>
+</header>
+
+<section>
+
+<!-- BIO -->
+<h2 class="title">👤 Bio</h2>
+
+<p class="line"><span class="highlight">Full Name:</span> Arjun Tamang</p>
+<p class="line"><span class="highlight">Nationality:</span> Nepali</p>
+<p class="line"><span class="highlight">Date of Birth:</span> 1996-01-12</p>
+<p class="line"><span class="highlight">Current Location:</span> Kuwait, Salmiya, Block-1,Street-11</p>
+<p class="line"><span class="highlight">Contact:</span> +965-98514037 (WhatsApp Active)</p>
+<p class="line"><span class="highlight">Education:</span> Level 10th</p>
+<p class="line"><span class="highlight">Operating Systems:</span> Windows, Mac, Linux, Kali Linux, Ubuntu</p>
+
+<br>
+
+<!-- EXPERIENCE -->
+<h2 class="title">💼 Career Experience</h2>
+
+<div class="step">
+<p class="step-title">IT Hub Nepal (2018 - 2020)</p>
+<p class="line">Computer Software & Hardware Technician — system repair, installation, troubleshooting.</p>
+</div>
+
+<div class="step">
+<p class="step-title">LOD Nepal (2021 - 2022)</p>
+<p class="line">CCTV Operator — live surveillance monitoring and incident reporting.</p>
+</div>
+
+<div class="step">
+<p class="step-title">Al Raed Security Kuwait (2025 - Present)</p>
+<p class="line">CCTV & Control System Operator — security monitoring and system management.</p>
+</div>
+
+<div class="step">
+<p class="step-title">Shipa Delivery (2026)</p>
+<p class="line">Last Mile Operations — Shipments Pickup,receiving,scanning,inbounding,
+Assigning,logistics,
+System works -  Excel, Google Sheets, Oracle netsuit cloud system.</p>
+</div>
+
+<br>
+
+<!-- SKILLS -->
+<h2 class="title">⚡ Technical Skills</h2>
+
+<div class="skill"><i class="fa-brands fa-html5"></i> HTML
+  <div class="bar"><div class="progress html"></div></div>
+</div>
+
+<div class="skill"><i class="fa-brands fa-css3-alt"></i> CSS
+  <div class="bar"><div class="progress css"></div></div>
+</div>
+
+<div class="skill"><i class="fa-brands fa-js"></i> JavaScript
+  <div class="bar"><div class="progress js"></div></div>
+</div>
+
+<div class="skill"><i class="fa-brands fa-python"></i> Python
+  <div class="bar"><div class="progress python"></div></div>
+</div>
+
+<br>
+
+<!-- CONTACT -->
+<h2 class="title">📞 Get In Touch</h2>
+
+<div class="contact">
+
+<a class="btn whatsapp" href="https://wa.me/96598514037" target="_blank">
+<i class="fa-brands fa-whatsapp"></i> WhatsApp
+</a>
+
+<a class="btn gmail" href="mailto:Arjungole07@gmail.com">
+<i class="fa-solid fa-envelope"></i> Gmail
+</a>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Arjun Tamang | Portfolio
+</footer>
+
+<script>
+const text = "IT Technician | CCTV Operator | Logistics Specialist";
+let i = 0;
+
+function typing(){
+  if(i < text.length){
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typing,50);
+  }
+}
+typing();
+</script>
+
+</body>
+</html>
